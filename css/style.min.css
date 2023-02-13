@@ -1374,6 +1374,8 @@ body.modal-open {
     .section-third__image_first {
         top: -51px;
         left: 61px;
+        width: 63%;
+        height: auto;
 
     }
 
@@ -1552,7 +1554,7 @@ body.modal-open {
 
     .section-second {
         padding: 50px 20px;
-        padding-top: 180px;
+        padding-top: 130px;
     }
 
     .section-third__text {
@@ -1585,12 +1587,12 @@ body.modal-open {
     }
 
     .section-fourth__subtitle {
-        font-size: 16px;
+        font-size: 20px;
         margin-bottom: 5px;
     }
 
     .section-fourth__text {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .section-fourth__column {
@@ -1618,5 +1620,6 @@ body.modal-open {
         padding-top: 395px;
 
     }
+
 
 }
