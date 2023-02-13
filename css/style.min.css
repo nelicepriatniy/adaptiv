@@ -1611,7 +1611,8 @@ body.modal-open {
     }
 
     .section-first {
-        background: url(../img/first-section/team.png) 50% 77px/40% no-repeat, url(../img/first-section/first_bg.png) 0 0 / cover no-repeat;
+        background: url(../img/first-section/team.png) 50% 77px/65% no-repeat, url(../img/first-section/first_bg.png) 0 0 / cover no-repeat;
+        padding-top: 395px;
 
     }
 
