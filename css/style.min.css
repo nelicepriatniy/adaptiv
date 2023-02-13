@@ -1610,4 +1610,9 @@ body.modal-open {
         margin-bottom: 30px;
     }
 
+    .section-first {
+        background: url(../img/first-section/team.png) 50% 77px/40% no-repeat, url(../img/first-section/first_bg.png) 0 0 / cover no-repeat;
+
+    }
+
 }
