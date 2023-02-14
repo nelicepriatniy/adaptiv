@@ -1325,14 +1325,26 @@ body.modal-open {
     }
     .header-body__nav {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .menu__link {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .menu__item:not(:last-child) {
-        margin-right: 10px;
+        margin-right: 5px;
+    }
+
+    .header__body {
+        flex-wrap: wrap;
     }
 
     .header-body__logo {
@@ -1463,7 +1475,7 @@ body.modal-open {
     }
 
     .fifth-question__text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .section-fifth__right-side {
@@ -1726,5 +1738,19 @@ body.modal-open {
         margin-bottom: 366px;
     }
 
+    .section-sixth {
+        padding-top: 0;
+    }
+
+    .section-fourth__subtitle {
+        display: flex;
+    }
+    .section-fourth__subtitle p {
+        margin-right: .5em;
+    }
+
+    .section-fourth__subtitle p:last-child {
+        margin-right: 0em;
+    }
 
 }
