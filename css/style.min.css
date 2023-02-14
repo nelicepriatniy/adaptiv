@@ -1753,4 +1753,18 @@ body.modal-open {
         margin-right: 0em;
     }
 
+    .section-fourth__subtitle {
+        position: relative;
+    }
+
+    .section-fourth__subtitle::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #701292;
+        position: absolute;
+        bottom: -4px;
+    }
+
 }
