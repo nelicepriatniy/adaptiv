@@ -374,5 +374,48 @@
     </div>
 </div>
     <script src="js/app.min.js"></script>
+    <script>
+
+
+        if (window.innerWidth < 1024){
+            console.log(12)
+        
+            let button = document.querySelectorAll('[data-observe-items]')
+        
+            button.forEach(el=>{
+                console.log(123)
+                el.onclick = function(){
+                    if(el.classList.contains('top')) {
+                        document.querySelector('body').scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                        console.log('top')
+                    } else 
+                    if(el.classList.contains('swaz')) {
+                        document.querySelector('body').scrollTo({
+                            top: 2000,
+                            behavior: 'smooth'
+                        });
+                        console.log('swaz')
+                    } else 
+                    if(el.classList.contains('faq')) {
+                        document.querySelector('body').scrollTo({
+                            top: 4500,
+                            behavior: 'smooth'
+                        });
+                        console.log('faq')
+                    } else 
+                    if(el.classList.contains('btn')) {
+                        document.querySelector('body').scrollTo({
+                            top: 5000,
+                            behavior: 'smooth'
+                        });
+                        console.log('faq')
+                    }
+                }
+            })
+        }
+        </script>
 </body>
 </html>

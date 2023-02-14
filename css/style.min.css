@@ -1636,5 +1636,30 @@ body.modal-open {
 
     }
 
+    .section-second__wrapper {
+        align-items: center;
+    }
+
+    .section-second__bottom {
+        align-items: center;
+    }
+
+    .section-second__column-wrapper:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .section-third {
+        padding-top: 0;
+    }
+
+    .section-fourth {
+        padding: 0 10px;
+        padding-top: 580px;
+    }
+
+    .section-fifth {
+        padding: 50px 20px;
+    }
+
 
 }
