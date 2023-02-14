@@ -1372,35 +1372,41 @@ body.modal-open {
     }
 
     .section-third__image_first {
-        top: 145px;
+        top: 101px;
         left: 61px;
         width: 63%;
         height: auto;
 
     }
 
+    .section-third__text_first {
+        top: 275px;
+
+    }
+
     .section-third .container.animate.active .section-third__text_first {
-        top: 413px;
+        top: 275px;
 
     }
 
     .section-third__image_second {
-        top: 559px;
+        top: 454px;
 
     }
 
     .section-third__text_second {
-        top: 833px;
+        top: 608px;
     }
 
     .section-third__image_third {
-        top: 1072px;
+        top: 857px;
+        width: 150px;
         bottom: auto;
 
     }
 
     .section-third__text_third {
-        top: 1349px;
+        top: 1020px;
     }
 
     .section-fourth {
@@ -1569,6 +1575,7 @@ body.modal-open {
 
     .section-third__image_second {
         left: 50%;
+        width: 150px;
         transform: translateX(-50%);
     }
 
@@ -1592,7 +1599,7 @@ body.modal-open {
 
     .section-fourth__subtitle {
         font-size: 20px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .section-fourth__text {
@@ -1600,7 +1607,7 @@ body.modal-open {
     }
 
     .section-fourth__column {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .section-fifth__top {
@@ -1620,8 +1627,8 @@ body.modal-open {
     }
 
     .section-first {
-        background: url(../img/first-section/team.png) 50% 77px/65% no-repeat, url(../img/first-section/first_bg.png) 0 0 / cover no-repeat;
-        padding-top: 395px;
+        background: url(../img/first-section/team.png) 50% 239px/65% no-repeat, url(../img/first-section/first_bg.png) 0 0 / cover no-repeat;
+        padding-top: 86px;
 
     }
 
@@ -1654,7 +1661,7 @@ body.modal-open {
 
     .section-fourth {
         padding: 0 10px;
-        padding-top: 580px;
+        padding-top: 204px;
     }
 
     .section-fifth {
@@ -1664,7 +1671,6 @@ body.modal-open {
     .section-third__text_first {
         opacity: 1;
         transform: translate(-50%, 0);
-        top: 424px;
     }
 
     .section-third__text_second {
@@ -1685,6 +1691,7 @@ body.modal-open {
 
     .section-third__image_first {
         left: 50%;
+        width: 150px;
         transform: translateX(-50%);
     }
 
@@ -1707,6 +1714,17 @@ body.modal-open {
         padding: 10px;
     }
 
+    .purple-line {
+        display: none;
+    }
+
+    .section-second {
+        padding-top: 80px;
+    }
+
+    .section-first__title {
+        margin-bottom: 366px;
+    }
 
 
 }
