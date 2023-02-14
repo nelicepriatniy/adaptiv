@@ -1632,7 +1632,7 @@ body.modal-open {
 
     .seventh-gallery {
         grid-template-columns: repeat(1, 340px);
-        grid-template-rows: repeat(4, 464px);
+        grid-template-rows: repeat(6, 464px);
 
     }
 
@@ -1659,6 +1659,33 @@ body.modal-open {
 
     .section-fifth {
         padding: 50px 20px;
+    }
+
+    .section-third__text_first {
+        opacity: 1;
+        transform: translate(-50%, 0);
+        top: 424px;
+    }
+
+    .section-third__text_second {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    .section-third__text_third {
+        opacity: 1;
+        transform: translate(-50%, 0);
+
+    }
+
+    .title__body {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .section-third__image_first {
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 
