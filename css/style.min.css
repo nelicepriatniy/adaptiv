@@ -1846,3 +1846,7 @@ body.modal-open {
     }
 
 }
+
+.footer-body__nav a {
+    color: white;
+}
