@@ -1775,4 +1775,18 @@ body.modal-open {
         height: 60px;
     }
 
+    .animate {
+        opacity: 1;
+    }
+
+    .section-fourth__column:nth-child(1), .section-fourth__column:nth-child(2), .section-fourth__column:nth-child(3) {
+        opacity: 1;
+    }
+
+    .gallery-item__back {
+        -webkit-transform: perspective(0) rotateY(0);
+        transform: perspective(0) rotateY(0);
+
+    }
+
 }
