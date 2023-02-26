@@ -1481,7 +1481,7 @@ body.modal-open {
     }
 
     .fifth-question__title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .fifth-question__text {
@@ -1597,8 +1597,9 @@ body.modal-open {
 
     .section-third__image_second {
         left: 50%;
-        width: 150px;
+        width: 120px;
         transform: translateX(-50%);
+        top: 302px;
     }
 
     .section-fourth {
@@ -1609,13 +1610,25 @@ body.modal-open {
 
     .section-third__image_third {
         left: 50%;
+        width: 100px;
         transform: translateX(-50%);
+        top: 562px;
 
+    }
+
+    .section-second__text {
+        font-size: 16px;
     }
 
     .section-third .container.animate.active .section-third__text_third {
         left: 50%;
         transform: translateX(-50%);
+
+    }
+
+    .section-third .container.animate.active .section-third__text_third {
+        font-size: 16px;
+        top: 689px;
 
     }
 
@@ -1679,11 +1692,13 @@ body.modal-open {
 
     .section-third {
         padding-top: 0;
+        padding-bottom: 0;
+        height: 816px;
     }
 
     .section-fourth {
         padding: 0 10px;
-        padding-top: 247px;
+        padding-top: 0;
     }
 
     .section-fifth {
@@ -1713,8 +1728,18 @@ body.modal-open {
 
     .section-third__image_first {
         left: 50%;
-        width: 150px;
+        width: 100px;
         transform: translateX(-50%);
+    }
+
+    .section-third .container.animate.active .section-third__text_first {
+        font-size: 16px;
+        top: 218px;
+    }
+
+    .section-third .container.animate.active .section-third__text_second {
+        font-size: 16px;
+        top: 438px;
     }
 
     .popup-dialog {
@@ -1802,6 +1827,18 @@ body.modal-open {
     .timer {
         transform: translate(0, 0);
         width: 100%;
+    }
+
+    .section-fourth__top {
+        margin-bottom: 10px;
+    }
+
+    .section-fifth__right-side {
+        padding-top: 2px;
+    }
+
+    .section-fourth__text {
+        font-size: 16px;
     }
 
 }
