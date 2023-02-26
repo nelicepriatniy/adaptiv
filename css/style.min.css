@@ -1278,8 +1278,8 @@ body.modal-open {
     object-fit: cover;
 }
 
-.section-fourth__coin4 {
-
+.politick {
+    margin-top: 150px;
 }
 @media (min-width: 499px) {
     .modal__input {
@@ -1839,6 +1839,10 @@ body.modal-open {
 
     .section-fourth__text {
         font-size: 16px;
+    }
+
+    .politick {
+        margin-top: 150px;
     }
 
 }
