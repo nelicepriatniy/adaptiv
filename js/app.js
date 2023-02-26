@@ -1,3 +1,6 @@
+
+let body = document.querySelector('body');
+
 (() => {
     "use strict";
     const e = (e, t, n = !1) => {
@@ -8,16 +11,16 @@
                 e.addEventListener("click", function () {
                     n
                         ? this == e &&
-                          (r.forEach((e) => e.classList.remove("open")),
-                          o.forEach((e) => {
-                              e.classList.remove("open"), (e.style.maxHeight = "0px");
-                          }),
-                          this.classList.add("open"),
-                          o[t].classList.add("open"),
-                          (o[t].style.maxHeight = o[t].scrollHeight + 80 + "px"))
+                        (r.forEach((e) => e.classList.remove("open")),
+                            o.forEach((e) => {
+                                e.classList.remove("open"), (e.style.maxHeight = "0px");
+                            }),
+                            this.classList.add("open"),
+                            o[t].classList.add("open"),
+                            (o[t].style.maxHeight = o[t].scrollHeight + 80 + "px"))
                         : (this.classList.toggle("open"),
-                          this.nextElementSibling.classList.toggle("open"),
-                          this.classList.contains("open") ? (this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + "px") : (this.nextElementSibling.style.maxHeight = "0px"));
+                            this.nextElementSibling.classList.toggle("open"),
+                            this.classList.contains("open") ? (this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 80 + "px") : (this.nextElementSibling.style.maxHeight = "0px"));
                 });
             });
     };
@@ -38,10 +41,10 @@
         { getPrototypeOf: s } = Object,
         i =
             ((a = Object.create(null)),
-            (e) => {
-                const t = o.call(e);
-                return a[t] || (a[t] = t.slice(8, -1).toLowerCase());
-            });
+                (e) => {
+                    const t = o.call(e);
+                    return a[t] || (a[t] = t.slice(8, -1).toLowerCase());
+                });
     var a;
     const c = (e) => ((e = e.toLowerCase()), (t) => i(t) === e),
         l = (e) => (t) => typeof t === e,
@@ -78,7 +81,7 @@
         const n = Object.keys(e);
         let r,
             o = n.length;
-        for (; o-- > 0; ) if (((r = n[o]), t === r.toLowerCase())) return r;
+        for (; o-- > 0;) if (((r = n[o]), t === r.toLowerCase())) return r;
         return null;
     }
     const v = "undefined" != typeof globalThis ? globalThis : "undefined" != typeof self ? self : "undefined" != typeof window ? window : global,
@@ -159,7 +162,7 @@
                 const c = {};
                 if (((t = t || {}), null == e)) return t;
                 do {
-                    for (o = Object.getOwnPropertyNames(e), i = o.length; i-- > 0; ) (a = o[i]), (r && !r(a, e, t)) || c[a] || ((t[a] = e[a]), (c[a] = !0));
+                    for (o = Object.getOwnPropertyNames(e), i = o.length; i-- > 0;) (a = o[i]), (r && !r(a, e, t)) || c[a] || ((t[a] = e[a]), (c[a] = !0));
                     e = !1 !== n && s(e);
                 } while (e && (!n || n(e, t)) && e !== Object.prototype);
                 return t;
@@ -177,13 +180,13 @@
                 let t = e.length;
                 if (!m(t)) return null;
                 const n = new Array(t);
-                for (; t-- > 0; ) n[t] = e[t];
+                for (; t-- > 0;) n[t] = e[t];
                 return n;
             },
             forEachEntry: (e, t) => {
                 const n = (e && e[Symbol.iterator]).call(e);
                 let r;
-                for (; (r = n.next()) && !r.done; ) {
+                for (; (r = n.next()) && !r.done;) {
                     const n = r.value;
                     t.call(e, n[0], n[1]);
                 }
@@ -191,7 +194,7 @@
             matchAll: (e, t) => {
                 let n;
                 const r = [];
-                for (; null !== (n = e.exec(t)); ) r.push(n);
+                for (; null !== (n = e.exec(t));) r.push(n);
                 return r;
             },
             isHTMLForm: C,
@@ -204,12 +207,12 @@
                     const r = e[n];
                     p(r) &&
                         ((t.enumerable = !1),
-                        "writable" in t
-                            ? (t.writable = !1)
-                            : t.set ||
-                              (t.set = () => {
-                                  throw Error("Can not rewrite read-only method '" + n + "'");
-                              }));
+                            "writable" in t
+                                ? (t.writable = !1)
+                                : t.set ||
+                                (t.set = () => {
+                                    throw Error("Can not rewrite read-only method '" + n + "'");
+                                }));
                 });
             },
             toObjectSet: (e, t) => {
@@ -225,7 +228,7 @@
                 e.toLowerCase().replace(/[-_\s]([a-z\d])(\w*)/g, function (e, t, n) {
                     return t.toUpperCase() + n;
                 }),
-            noop: () => {},
+            noop: () => { },
             toFiniteNumber: (e, t) => ((e = +e), Number.isFinite(e) ? e : t),
             findKey: A,
             global: v,
@@ -234,7 +237,7 @@
             generateString: (e = 16, t = U.ALPHA_DIGIT) => {
                 let n = "";
                 const { length: r } = t;
-                for (; e--; ) n += t[(Math.random() * r) | 0];
+                for (; e--;) n += t[(Math.random() * r) | 0];
                 return n;
             },
             isSpecCompliantForm: function (e) {
@@ -327,22 +330,22 @@
     function z(e, t, n) {
         return e
             ? e
-                  .concat(t)
-                  .map(function (e, t) {
-                      return (e = I(e)), !n && t ? "[" + e + "]" : e;
-                  })
-                  .join(n ? "." : "")
+                .concat(t)
+                .map(function (e, t) {
+                    return (e = I(e)), !n && t ? "[" + e + "]" : e;
+                })
+                .join(n ? "." : "")
             : t;
     }
     const J = B.toFlatObject(B, {}, null, function (e) {
-            return /^is[A-Z]/.test(e);
-        }),
+        return /^is[A-Z]/.test(e);
+    }),
         W = function (e, t, n) {
             if (!B.isObject(e)) throw new TypeError("target must be an object");
             t = t || new FormData();
             const r = (n = B.toFlatObject(n, { metaTokens: !0, dots: !1, indexes: !1 }, !1, function (e, t) {
-                    return !B.isUndefined(t[e]);
-                })).metaTokens,
+                return !B.isUndefined(t[e]);
+            })).metaTokens,
                 o = n.visitor || l,
                 s = n.dots,
                 i = n.indexes,
@@ -407,8 +410,8 @@
         ($.toString = function (e) {
             const t = e
                 ? function (t) {
-                      return e.call(this, t, K);
-                  }
+                    return e.call(this, t, K);
+                }
                 : K;
             return this._pairs
                 .map(function (e) {
@@ -432,24 +435,24 @@
         return e;
     }
     const Q = class {
-            constructor() {
-                this.handlers = [];
-            }
-            use(e, t, n) {
-                return this.handlers.push({ fulfilled: e, rejected: t, synchronous: !!n && n.synchronous, runWhen: n ? n.runWhen : null }), this.handlers.length - 1;
-            }
-            eject(e) {
-                this.handlers[e] && (this.handlers[e] = null);
-            }
-            clear() {
-                this.handlers && (this.handlers = []);
-            }
-            forEach(e) {
-                B.forEach(this.handlers, function (t) {
-                    null !== t && e(t);
-                });
-            }
-        },
+        constructor() {
+            this.handlers = [];
+        }
+        use(e, t, n) {
+            return this.handlers.push({ fulfilled: e, rejected: t, synchronous: !!n && n.synchronous, runWhen: n ? n.runWhen : null }), this.handlers.length - 1;
+        }
+        eject(e) {
+            this.handlers[e] && (this.handlers[e] = null);
+        }
+        clear() {
+            this.handlers && (this.handlers = []);
+        }
+        forEach(e) {
+            B.forEach(this.handlers, function (t) {
+                null !== t && e(t);
+            });
+        }
+    },
         Z = { silentJSONParsing: !0, forcedJSONParsing: !0, clarifyTimeoutError: !1 },
         ee = "undefined" != typeof URLSearchParams ? URLSearchParams : G,
         te = FormData,
@@ -469,18 +472,18 @@
                     a
                         ? (B.hasOwnProp(r, s) ? (r[s] = [r[s], n]) : (r[s] = n), !i)
                         : ((r[s] && B.isObject(r[s])) || (r[s] = []),
-                          t(e, n, r[s], o) &&
-                              B.isArray(r[s]) &&
-                              (r[s] = (function (e) {
-                                  const t = {},
-                                      n = Object.keys(e);
-                                  let r;
-                                  const o = n.length;
-                                  let s;
-                                  for (r = 0; r < o; r++) (s = n[r]), (t[s] = e[s]);
-                                  return t;
-                              })(r[s])),
-                          !i)
+                            t(e, n, r[s], o) &&
+                            B.isArray(r[s]) &&
+                            (r[s] = (function (e) {
+                                const t = {},
+                                    n = Object.keys(e);
+                                let r;
+                                const o = n.length;
+                                let s;
+                                for (r = 0; r < o; r++) (s = n[r]), (t[s] = e[s]);
+                                return t;
+                            })(r[s])),
+                            !i)
                 );
             }
             if (B.isFormData(e) && B.isFunction(e.entries)) {
@@ -538,15 +541,15 @@
                     }
                     return o || r
                         ? (t.setContentType("application/json", !1),
-                          (function (e, t, n) {
-                              if (B.isString(e))
-                                  try {
-                                      return (0, JSON.parse)(e), B.trim(e);
-                                  } catch (e) {
-                                      if ("SyntaxError" !== e.name) throw e;
-                                  }
-                              return (0, JSON.stringify)(e);
-                          })(e))
+                            (function (e, t, n) {
+                                if (B.isString(e))
+                                    try {
+                                        return (0, JSON.parse)(e), B.trim(e);
+                                    } catch (e) {
+                                        if ("SyntaxError" !== e.name) throw e;
+                                    }
+                                return (0, JSON.stringify)(e);
+                            })(e))
                         : e;
                 },
             ],
@@ -633,24 +636,24 @@
                 B.isPlainObject(e) || e instanceof this.constructor
                     ? s(e, t)
                     : B.isString(e) && (e = e.trim()) && !/^[-_a-zA-Z]+$/.test(e.trim())
-                    ? s(
-                          ((e) => {
-                              const t = {};
-                              let n, r, o;
-                              return (
-                                  e &&
-                                      e.split("\n").forEach(function (e) {
-                                          (o = e.indexOf(":")),
-                                              (n = e.substring(0, o).trim().toLowerCase()),
-                                              (r = e.substring(o + 1).trim()),
-                                              !n || (t[n] && le[n]) || ("set-cookie" === n ? (t[n] ? t[n].push(r) : (t[n] = [r])) : (t[n] = t[n] ? t[n] + ", " + r : r));
-                                      }),
-                                  t
-                              );
-                          })(e),
-                          t
-                      )
-                    : null != e && o(t, e, n),
+                        ? s(
+                            ((e) => {
+                                const t = {};
+                                let n, r, o;
+                                return (
+                                    e &&
+                                    e.split("\n").forEach(function (e) {
+                                        (o = e.indexOf(":")),
+                                            (n = e.substring(0, o).trim().toLowerCase()),
+                                            (r = e.substring(o + 1).trim()),
+                                            !n || (t[n] && le[n]) || ("set-cookie" === n ? (t[n] ? t[n].push(r) : (t[n] = [r])) : (t[n] = t[n] ? t[n] + ", " + r : r));
+                                    }),
+                                    t
+                                );
+                            })(e),
+                            t
+                        )
+                        : null != e && o(t, e, n),
                 this
             );
         }
@@ -665,7 +668,7 @@
                             const t = Object.create(null),
                                 n = /([^\s,;=]+)\s*(?:=\s*([^,;]+))?/g;
                             let r;
-                            for (; (r = n.exec(e)); ) t[r[1]] = r[2];
+                            for (; (r = n.exec(e));) t[r[1]] = r[2];
                             return t;
                         })(e);
                     if (B.isFunction(t)) return t.call(this, e, n);
@@ -696,7 +699,7 @@
             const t = Object.keys(this);
             let n = t.length,
                 r = !1;
-            for (; n--; ) {
+            for (; n--;) {
                 const o = t[n];
                 (e && !he(0, this[o], o, e)) || (delete this[o], (r = !0));
             }
@@ -711,11 +714,11 @@
                     if (s) return (t[s] = de(r)), void delete t[o];
                     const i = e
                         ? (function (e) {
-                              return e
-                                  .trim()
-                                  .toLowerCase()
-                                  .replace(/([a-z\d])(\w*)/g, (e, t, n) => t.toUpperCase() + n);
-                          })(o)
+                            return e
+                                .trim()
+                                .toLowerCase()
+                                .replace(/([a-z\d])(\w*)/g, (e, t, n) => t.toUpperCase() + n);
+                        })(o)
                         : String(o).trim();
                     i !== o && delete t[o], (t[i] = de(r)), (n[i] = !0);
                 }),
@@ -769,7 +772,7 @@
                             });
                         });
                     })(n, e),
-                    (t[r] = !0));
+                        (t[r] = !0));
             }
             return B.isArray(e) ? e.forEach(r) : r(e), this;
         }
@@ -799,70 +802,70 @@
     const we = be,
         Ee = oe.isStandardBrowserEnv
             ? {
-                  write: function (e, t, n, r, o, s) {
-                      const i = [];
-                      i.push(e + "=" + encodeURIComponent(t)),
-                          B.isNumber(n) && i.push("expires=" + new Date(n).toGMTString()),
-                          B.isString(r) && i.push("path=" + r),
-                          B.isString(o) && i.push("domain=" + o),
-                          !0 === s && i.push("secure"),
-                          (document.cookie = i.join("; "));
-                  },
-                  read: function (e) {
-                      const t = document.cookie.match(new RegExp("(^|;\\s*)(" + e + ")=([^;]*)"));
-                      return t ? decodeURIComponent(t[3]) : null;
-                  },
-                  remove: function (e) {
-                      this.write(e, "", Date.now() - 864e5);
-                  },
-              }
+                write: function (e, t, n, r, o, s) {
+                    const i = [];
+                    i.push(e + "=" + encodeURIComponent(t)),
+                        B.isNumber(n) && i.push("expires=" + new Date(n).toGMTString()),
+                        B.isString(r) && i.push("path=" + r),
+                        B.isString(o) && i.push("domain=" + o),
+                        !0 === s && i.push("secure"),
+                        (document.cookie = i.join("; "));
+                },
+                read: function (e) {
+                    const t = document.cookie.match(new RegExp("(^|;\\s*)(" + e + ")=([^;]*)"));
+                    return t ? decodeURIComponent(t[3]) : null;
+                },
+                remove: function (e) {
+                    this.write(e, "", Date.now() - 864e5);
+                },
+            }
             : {
-                  write: function () {},
-                  read: function () {
-                      return null;
-                  },
-                  remove: function () {},
-              };
+                write: function () { },
+                read: function () {
+                    return null;
+                },
+                remove: function () { },
+            };
     function Se(e, t) {
         return e && !/^([a-z][a-z\d+\-.]*:)?\/\//i.test(t)
             ? (function (e, t) {
-                  return t ? e.replace(/\/+$/, "") + "/" + t.replace(/^\/+/, "") : e;
-              })(e, t)
+                return t ? e.replace(/\/+$/, "") + "/" + t.replace(/^\/+/, "") : e;
+            })(e, t)
             : t;
     }
     const Oe = oe.isStandardBrowserEnv
-            ? (function () {
-                  const e = /(msie|trident)/i.test(navigator.userAgent),
-                      t = document.createElement("a");
-                  let n;
-                  function r(n) {
-                      let r = n;
-                      return (
-                          e && (t.setAttribute("href", r), (r = t.href)),
-                          t.setAttribute("href", r),
-                          {
-                              href: t.href,
-                              protocol: t.protocol ? t.protocol.replace(/:$/, "") : "",
-                              host: t.host,
-                              search: t.search ? t.search.replace(/^\?/, "") : "",
-                              hash: t.hash ? t.hash.replace(/^#/, "") : "",
-                              hostname: t.hostname,
-                              port: t.port,
-                              pathname: "/" === t.pathname.charAt(0) ? t.pathname : "/" + t.pathname,
-                          }
-                      );
-                  }
-                  return (
-                      (n = r(window.location.href)),
-                      function (e) {
-                          const t = B.isString(e) ? r(e) : e;
-                          return t.protocol === n.protocol && t.host === n.host;
-                      }
-                  );
-              })()
-            : function () {
-                  return !0;
-              },
+        ? (function () {
+            const e = /(msie|trident)/i.test(navigator.userAgent),
+                t = document.createElement("a");
+            let n;
+            function r(n) {
+                let r = n;
+                return (
+                    e && (t.setAttribute("href", r), (r = t.href)),
+                    t.setAttribute("href", r),
+                    {
+                        href: t.href,
+                        protocol: t.protocol ? t.protocol.replace(/:$/, "") : "",
+                        host: t.host,
+                        search: t.search ? t.search.replace(/^\?/, "") : "",
+                        hash: t.hash ? t.hash.replace(/^#/, "") : "",
+                        hostname: t.hostname,
+                        port: t.port,
+                        pathname: "/" === t.pathname.charAt(0) ? t.pathname : "/" + t.pathname,
+                    }
+                );
+            }
+            return (
+                (n = r(window.location.href)),
+                function (e) {
+                    const t = B.isString(e) ? r(e) : e;
+                    return t.protocol === n.protocol && t.host === n.host;
+                }
+            );
+        })()
+        : function () {
+            return !0;
+        },
         Re = function (e, t) {
             e = e || 10;
             const n = new Array(e),
@@ -878,7 +881,7 @@
                     o || (o = c), (n[s] = a), (r[s] = c);
                     let u = i,
                         f = 0;
-                    for (; u !== s; ) (f += n[u++]), (u %= e);
+                    for (; u !== s;) (f += n[u++]), (u %= e);
                     if (((s = (s + 1) % e), s === i && (i = (i + 1) % e), c - o < t)) return;
                     const d = l && c - l;
                     return d ? Math.round((1e3 * f) / d) : void 0;
@@ -938,41 +941,41 @@
                     }
                     if (
                         (c.open(e.method.toUpperCase(), X(l, e.params, e.paramsSerializer), !0),
-                        (c.timeout = e.timeout),
-                        "onloadend" in c
-                            ? (c.onloadend = u)
-                            : (c.onreadystatechange = function () {
-                                  c && 4 === c.readyState && (0 !== c.status || (c.responseURL && 0 === c.responseURL.indexOf("file:"))) && setTimeout(u);
-                              }),
-                        (c.onabort = function () {
-                            c && (n(new M("Request aborted", M.ECONNABORTED, e, c)), (c = null));
-                        }),
-                        (c.onerror = function () {
-                            n(new M("Network Error", M.ERR_NETWORK, e, c)), (c = null);
-                        }),
-                        (c.ontimeout = function () {
-                            let t = e.timeout ? "timeout of " + e.timeout + "ms exceeded" : "timeout exceeded";
-                            const r = e.transitional || Z;
-                            e.timeoutErrorMessage && (t = e.timeoutErrorMessage), n(new M(t, r.clarifyTimeoutError ? M.ETIMEDOUT : M.ECONNABORTED, e, c)), (c = null);
-                        }),
-                        oe.isStandardBrowserEnv)
+                            (c.timeout = e.timeout),
+                            "onloadend" in c
+                                ? (c.onloadend = u)
+                                : (c.onreadystatechange = function () {
+                                    c && 4 === c.readyState && (0 !== c.status || (c.responseURL && 0 === c.responseURL.indexOf("file:"))) && setTimeout(u);
+                                }),
+                            (c.onabort = function () {
+                                c && (n(new M("Request aborted", M.ECONNABORTED, e, c)), (c = null));
+                            }),
+                            (c.onerror = function () {
+                                n(new M("Network Error", M.ERR_NETWORK, e, c)), (c = null);
+                            }),
+                            (c.ontimeout = function () {
+                                let t = e.timeout ? "timeout of " + e.timeout + "ms exceeded" : "timeout exceeded";
+                                const r = e.transitional || Z;
+                                e.timeoutErrorMessage && (t = e.timeoutErrorMessage), n(new M(t, r.clarifyTimeoutError ? M.ETIMEDOUT : M.ECONNABORTED, e, c)), (c = null);
+                            }),
+                            oe.isStandardBrowserEnv)
                     ) {
                         const t = (e.withCredentials || Oe(l)) && e.xsrfCookieName && Ee.read(e.xsrfCookieName);
                         t && o.set(e.xsrfHeaderName, t);
                     }
                     void 0 === r && o.setContentType(null),
                         "setRequestHeader" in c &&
-                            B.forEach(o.toJSON(), function (e, t) {
-                                c.setRequestHeader(t, e);
-                            }),
+                        B.forEach(o.toJSON(), function (e, t) {
+                            c.setRequestHeader(t, e);
+                        }),
                         B.isUndefined(e.withCredentials) || (c.withCredentials = !!e.withCredentials),
                         s && "json" !== s && (c.responseType = e.responseType),
                         "function" == typeof e.onDownloadProgress && c.addEventListener("progress", Ae(e.onDownloadProgress, !0)),
                         "function" == typeof e.onUploadProgress && c.upload && c.upload.addEventListener("progress", Ae(e.onUploadProgress)),
                         (e.cancelToken || e.signal) &&
-                            ((i = (t) => {
-                                c && (n(!t || t.type ? new we(null, e, c) : t), c.abort(), (c = null));
-                            }),
+                        ((i = (t) => {
+                            c && (n(!t || t.type ? new we(null, e, c) : t), c.abort(), (c = null));
+                        }),
                             e.cancelToken && e.cancelToken.subscribe(i),
                             e.signal && (e.signal.aborted ? i() : e.signal.addEventListener("abort", i)));
                     const f = (function (e) {
@@ -987,7 +990,7 @@
         if (e) {
             try {
                 Object.defineProperty(e, "name", { value: t });
-            } catch (e) {}
+            } catch (e) { }
             Object.defineProperty(e, "adapterName", { value: t });
         }
     });
@@ -1101,22 +1104,22 @@
         };
     };
     const _e = {
-            assertOptions: function (e, t, n) {
-                if ("object" != typeof e) throw new M("options must be an object", M.ERR_BAD_OPTION_VALUE);
-                const r = Object.keys(e);
-                let o = r.length;
-                for (; o-- > 0; ) {
-                    const s = r[o],
-                        i = t[s];
-                    if (i) {
-                        const t = e[s],
-                            n = void 0 === t || i(t, s, e);
-                        if (!0 !== n) throw new M("option " + s + " must be " + n, M.ERR_BAD_OPTION_VALUE);
-                    } else if (!0 !== n) throw new M("Unknown option " + s, M.ERR_BAD_OPTION);
-                }
-            },
-            validators: De,
+        assertOptions: function (e, t, n) {
+            if ("object" != typeof e) throw new M("options must be an object", M.ERR_BAD_OPTION_VALUE);
+            const r = Object.keys(e);
+            let o = r.length;
+            for (; o-- > 0;) {
+                const s = r[o],
+                    i = t[s];
+                if (i) {
+                    const t = e[s],
+                        n = void 0 === t || i(t, s, e);
+                    if (!0 !== n) throw new M("option " + s + " must be " + n, M.ERR_BAD_OPTION_VALUE);
+                } else if (!0 !== n) throw new M("Unknown option " + s, M.ERR_BAD_OPTION);
+            }
         },
+        validators: De,
+    },
         Ue = _e.validators;
     class Be {
         constructor(e) {
@@ -1131,9 +1134,9 @@
                 (t.method = (t.method || this.defaults.method || "get").toLowerCase()),
                 (s = o && B.merge(o.common, o[t.method])),
                 s &&
-                    B.forEach(["delete", "get", "head", "post", "put", "patch", "common"], (e) => {
-                        delete o[e];
-                    }),
+                B.forEach(["delete", "get", "head", "post", "put", "patch", "common"], (e) => {
+                    delete o[e];
+                }),
                 (t.headers = me.concat(s, o));
             const i = [];
             let a = !0;
@@ -1149,12 +1152,12 @@
                 f = 0;
             if (!a) {
                 const e = [Le.bind(this), void 0];
-                for (e.unshift.apply(e, i), e.push.apply(e, c), u = e.length, l = Promise.resolve(t); f < u; ) l = l.then(e[f++], e[f++]);
+                for (e.unshift.apply(e, i), e.push.apply(e, c), u = e.length, l = Promise.resolve(t); f < u;) l = l.then(e[f++], e[f++]);
                 return l;
             }
             u = i.length;
             let d = t;
-            for (f = 0; f < u; ) {
+            for (f = 0; f < u;) {
                 const e = i[f++],
                     t = i[f++];
                 try {
@@ -1169,7 +1172,7 @@
             } catch (e) {
                 return Promise.reject(e);
             }
-            for (f = 0, u = c.length; f < u; ) l = l.then(c[f++], c[f++]);
+            for (f = 0, u = c.length; f < u;) l = l.then(c[f++], c[f++]);
             return l;
         }
         getUri(e) {
@@ -1201,7 +1204,7 @@
             this.promise.then((e) => {
                 if (!n._listeners) return;
                 let t = n._listeners.length;
-                for (; t-- > 0; ) n._listeners[t](e);
+                for (; t-- > 0;) n._listeners[t](e);
                 n._listeners = null;
             }),
                 (this.promise.then = (e) => {
@@ -1355,7 +1358,7 @@
             return `${e.getDate() < 10 ? "0" + e.getDate() : e.getDate()}.${e.getMonth() + 1 < 10 ? "0" + (e.getMonth() + 1) : e.getMonth() + 1}.${e.getFullYear()} ${r}:${n}:${t}`;
         },
         We = () => {
-            if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
+            if (Date.now() < 16770564e5 || Date.now() >= 16770564e5) {
                 let e = {},
                     t = document.querySelector(".section-sixth__form");
                 t.querySelectorAll("input").forEach((t) => {
@@ -1380,12 +1383,12 @@
         };
     window.addEventListener("DOMContentLoaded", () => {
         (() => {
-            if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
+            if (Date.now() < 16770564e5 || Date.now() >= 16770564e5) {
                 const e = (e, t) => {
-                        e.forEach((e) => {
-                            e.isIntersecting && (e.target.classList.add("active"), t.unobserve(e.target));
-                        });
-                    },
+                    e.forEach((e) => {
+                        e.isIntersecting && (e.target.classList.add("active"), t.unobserve(e.target));
+                    });
+                },
                     t = new IntersectionObserver(e, { root: null, threshold: 0.7 });
                 document.querySelectorAll(".animate").forEach((e) => {
                     t.observe(e);
@@ -1393,7 +1396,7 @@
             }
         })(),
             (function (e) {
-                if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
+                if (Date.now() < 16770564e5 || Date.now() >= 16770564e5) {
                     const t = new Date(),
                         n = { hours: 3, min: 54, sec: 32 },
                         r = new Date().setHours(t.getHours() + n.hours, t.getMinutes() + n.min, t.getSeconds() + n.sec);
@@ -1428,7 +1431,7 @@
             (() => {
                 const e = document.querySelectorAll("[data-observe]"),
                     t = document.querySelectorAll("[data-observe-items]");
-                if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
+                if (Date.now() < 16770564e5 || Date.now() >= 16770564e5) {
                     const n = new IntersectionObserver(
                         (e) => {
                             e.forEach((e) => {
@@ -1463,7 +1466,7 @@
                     });
             })(),
             (() => {
-                if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
+                if (Date.now() < 16770564e5 || Date.now() >= 16770564e5) {
                     const e = document.querySelector(".popup"),
                         n = document.querySelector(".popup_close");
                     e.addEventListener("click", (r) => {
@@ -1477,7 +1480,7 @@
                 const e = document.querySelectorAll("[data-parallax-speed]"),
                     t = window.innerHeight / 2;
                 Date.now() < 16770564e5 &&
-                    window.addEventListener("scroll", () => {
+                body.addEventListener("scroll", () => {
                         window.scrollY,
                             e.forEach((e) => {
                                 const n = e.dataset.parallaxSpeed,
@@ -1496,30 +1499,40 @@ function offsetPosition(element) {
     var offsetLeft = 0, offsetTop = 0;
     do {
         offsetLeft += element.offsetLeft;
-        offsetTop  += element.offsetTop;
+        offsetTop += element.offsetTop;
     } while (element = element.offsetParent);
     return offsetTop;
 }
 
 let animateItems = document.querySelectorAll('.animate');
 let windowScroll = window.scrollY;
-let body = document.querySelector('body')
 
-body.addEventListener('scroll', ()=>{
+body.addEventListener('scroll', () => {
     windowScroll = body.scrollTop;
-    animateItems.forEach(el=>{
+    animateItems.forEach(el => {
         let offsetTopEl = offsetPosition(el);
-        if (offsetTopEl <= windowScroll + 700){
+        if (offsetTopEl <= windowScroll + 700) {
             el.classList.add('active')
         }
     })
-    
+
 })
 let questBtn = document.querySelectorAll('.section-fifth__qustion');
 
+const e = document.querySelectorAll("[data-parallax-speed]"),
+    t = window.innerHeight / 2;
+    body.addEventListener("scroll", () => {
+    window.scrollY
+        e.forEach((e) => {
+            const n = e.dataset.parallaxSpeed,
+                r = e.getBoundingClientRect().top;
+            e.style.transform = `translateY(-${((r - t) * n) / 100}px)`;
+        });
+});
+
 questBtn.forEach(element => {
     let el = element;
-    el.addEventListener('click', function() {
+    el.addEventListener('click', function () {
         console.log(12)
         el.classList.toggle('active-q');
         let qId = el.getAttribute('data-q');
