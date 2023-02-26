@@ -670,6 +670,7 @@ body.modal-open {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    margin-bottom: 10px;
 }
 .section-fourth__column:nth-child(1),
 .section-fourth__column:nth-child(2),
@@ -920,6 +921,9 @@ body.modal-open {
     -webkit-transition: 0.8s;
     -o-transition: 0.8s;
     transition: 0.8s;
+}
+.fifth-question__text.active-q {
+    max-height: 50vh;
 }
 .section-sixth {
     display: -webkit-box;
@@ -1274,8 +1278,8 @@ body.modal-open {
     object-fit: cover;
 }
 
-.animate {
-    transform: translate(0, 0) !important;
+.section-fourth__coin4 {
+
 }
 @media (min-width: 499px) {
     .modal__input {

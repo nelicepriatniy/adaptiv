@@ -1355,7 +1355,7 @@
             return `${e.getDate() < 10 ? "0" + e.getDate() : e.getDate()}.${e.getMonth() + 1 < 10 ? "0" + (e.getMonth() + 1) : e.getMonth() + 1}.${e.getFullYear()} ${r}:${n}:${t}`;
         },
         We = () => {
-            if (Date.now() < 16770564e5) {
+            if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
                 let e = {},
                     t = document.querySelector(".section-sixth__form");
                 t.querySelectorAll("input").forEach((t) => {
@@ -1380,7 +1380,7 @@
         };
     window.addEventListener("DOMContentLoaded", () => {
         (() => {
-            if (Date.now() < 16770564e5) {
+            if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
                 const e = (e, t) => {
                         e.forEach((e) => {
                             e.isIntersecting && (e.target.classList.add("active"), t.unobserve(e.target));
@@ -1393,7 +1393,7 @@
             }
         })(),
             (function (e) {
-                if (Date.now() < 16770564e5) {
+                if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
                     const t = new Date(),
                         n = { hours: 3, min: 54, sec: 32 },
                         r = new Date().setHours(t.getHours() + n.hours, t.getMinutes() + n.min, t.getSeconds() + n.sec);
@@ -1428,7 +1428,7 @@
             (() => {
                 const e = document.querySelectorAll("[data-observe]"),
                     t = document.querySelectorAll("[data-observe-items]");
-                if (Date.now() < 16770564e5) {
+                if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
                     const n = new IntersectionObserver(
                         (e) => {
                             e.forEach((e) => {
@@ -1463,7 +1463,7 @@
                     });
             })(),
             (() => {
-                if (Date.now() < 16770564e5) {
+                if (Date.now() < 16770564e5 ||Date.now() >= 16770564e5) {
                     const e = document.querySelector(".popup"),
                         n = document.querySelector(".popup_close");
                     e.addEventListener("click", (r) => {
@@ -1515,3 +1515,18 @@ body.addEventListener('scroll', ()=>{
     })
     
 })
+let questBtn = document.querySelectorAll('.section-fifth__qustion');
+
+questBtn.forEach(element => {
+    let el = element;
+    el.addEventListener('click', function() {
+        console.log(12)
+        el.classList.toggle('active-q');
+        let qId = el.getAttribute('data-q');
+        let qBlock = document.querySelectorAll(qId);
+        qBlock.forEach(element => {
+            element.classList.toggle('active-q');
+        });
+        console.log(qBlock);
+    })
+});
